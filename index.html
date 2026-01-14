@@ -75,8 +75,8 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-900">
-                    <a href="#" class="hover:text-teal-600 transition">Home</a>
-                    <a href="#" class="hover:text-teal-600 transition">About Us</a>
+                    <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-teal-600 transition">About Us</a>
                     <a href="#" class="hover:text-teal-600 transition">Admission</a>
                     <a href="#" class="hover:text-teal-600 transition">Our Features</a>
                     <a href="#" class="hover:text-teal-600 transition">Our Faculty</a>
@@ -95,7 +95,7 @@
                 <!-- Mobile Toggle -->
                 <button onclick="openMenu()"
                     class="lg:hidden rounded-md p-2 bg-transparent hover:bg-gray-100 transition" aria-label="Open menu">
-                    <i class="ri-menu-line text-lg"></i>
+                    <i class="ri-menu-3-line text-3xl"></i>
                 </button>
 
             </div>
@@ -112,36 +112,72 @@
         class="fixed top-0 left-0 h-full w-80 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 z-[100] flex flex-col">
 
         <!-- Offcanvas Header -->
-        <div class="px-6 py-5 border-b">
-            <p class="text-lg font-semibold text-teal-700">EduSite</p>
-            <p class="text-xs text-gray-500 mt-1">Admissions Open</p>
-            <button onclick="closeMenu()" class="absolute top-4 right-4 text-2xl text-gray-500">×</button>
+        <div class="py-2 border-b border-slate-100 px-4 flex items-center justify-between">
+            <img src="assets/images/logo/logo.png" class="h-10" alt="">
+            <button onclick="closeMenu()" class="text-3xl text-red-500">×</button>
         </div>
 
         <!-- Menu -->
-        <nav class="flex-1 px-6 py-6 space-y-4 text-sm font-medium text-gray-900">
-            <a href="#" class="block hover:text-teal-600 transition">Home</a>
-            <a href="#" class="block hover:text-teal-600 transition">About Us</a>
-            <a href="#" class="block hover:text-teal-600 transition">Admission</a>
-            <a href="#" class="block hover:text-teal-600 transition">Our Features</a>
-            <a href="#" class="block hover:text-teal-600 transition">Our Faculty</a>
-            <a href="#" class="block hover:text-teal-600 transition">Education Programme</a>
-            <a href="#" class="block hover:text-teal-600 transition">Gallery</a>
-            <a href="#" class="block hover:text-teal-600 transition">Contact Us</a>
+        <!-- Navigation -->
+        <nav class="flex-1 pb-6 text-sm font-medium text-gray-800">
 
-            <div class="pt-6 border-t">
-                <a href="#"
-                    class="block text-center rounded-lg bg-teal-600 px-4 py-3 text-white font-semibold hover:bg-teal-700 transition">
-                    Apply Now
+            <a href="index.html" class="block px-3 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Home
+            </a>
+
+            <a href="about.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                About Us
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Admission
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Our Features
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Our Faculty
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Education Programme
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Gallery
+            </a>
+
+            <a href="#" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Contact Us
+            </a>
+
+            <!-- CTA -->
+            <div class="pt-6 px-4">
+                <a href="#" class="block text-center rounded-lg bg-teal-600 px-4 py-3
+             text-white font-semibold hover:bg-teal-700 transition">
+                    Apply for Admission
                 </a>
             </div>
+
         </nav>
 
+
         <!-- Footer -->
-        <div class="border-t px-6 py-4 text-xs text-gray-500">
+        <div class="border-t px-6 py-4 text-xs border-slate-200 text-gray-500">
             © 2026 EduSite. All rights reserved.
         </div>
     </aside>
+
 
 
 
@@ -164,7 +200,7 @@
             </div>
             <div class="container flex h-full justify-center relative">
                 <div class="2xl:max-w-3xl xl:max-w-xl text-center px-6">
-                    <h1 class="2xl:text-7xl xl:text-4xl  md:text-3xl text-2xl leading-[1.25] font-semibold">
+                    <h1 class="2xl:text-6xl xl:text-4xl  md:text-3xl text-2xl leading-[1.25] font-semibold">
                         Where Bright <span class="text-teal-600 italic">Futures
                             Begin</span> With Smiles.</h1>
                     <p class="text-lg mt-6 opacity-75 leading-relaxed">At Ken Academy, children explore, learn, and grow
@@ -648,7 +684,7 @@
 
                     <!-- Faculty Card -->
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -665,7 +701,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -682,7 +718,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -700,7 +736,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -718,7 +754,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -736,7 +772,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -754,7 +790,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -771,7 +807,7 @@
                     </div>
 
                     <div
-                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+                        class="relative bg-gradient-to-br from-white to-slate-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition overflow-hidden">
                         <div
                             class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-teal-500 rounded-t-2xl">
                         </div>
@@ -996,7 +1032,8 @@
 
             <!-- Left Image -->
             <div class="hidden md:block bg-teal-600">
-                <img src="assets/images/blogs/blog-2.webp" alt="Admissions" class="h-full w-full object-cover aspect-square">
+                <img src="assets/images/blogs/blog-2.webp" alt="Admissions"
+                    class="h-full w-full object-cover aspect-square">
             </div>
 
             <!-- Right Form -->
