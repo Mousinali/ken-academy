@@ -35,6 +35,12 @@ html {
     padding: 0 1rem;
 }
 
+@media (min-width: 1260px) {
+    .container {
+        padding: 0 3rem;
+    }
+}
+
 header.scroll-on {
     position: fixed;
     top: 0;
@@ -151,58 +157,58 @@ header.scroll-on {
 }
 
 @keyframes border-move {
-  0% {
-    border-radius: 42% 58% 51% 49% / 55% 38% 62% 45%;
-    transform: translate(0, 0) scale(1);
-  }
+    0% {
+        border-radius: 42% 58% 51% 49% / 55% 38% 62% 45%;
+        transform: translate(0, 0) scale(1);
+    }
 
-  10% {
-    border-radius: 65% 35% 70% 30% / 62% 45% 55% 38%;
-    transform: translate(6px, -8px) scale(1.05);
-  }
+    10% {
+        border-radius: 65% 35% 70% 30% / 62% 45% 55% 38%;
+        transform: translate(6px, -8px) scale(1.05);
+    }
 
-  20% {
-    border-radius: 58% 42% 45% 55% / 48% 65% 35% 52%;
-    transform: translate(-8px, 10px) scale(0.95);
-  }
+    20% {
+        border-radius: 58% 42% 45% 55% / 48% 65% 35% 52%;
+        transform: translate(-8px, 10px) scale(0.95);
+    }
 
-  30% {
-    border-radius: 72% 28% 58% 42% / 40% 60% 45% 55%;
-    transform: translate(10px, -6px) scale(1.08);
-  }
+    30% {
+        border-radius: 72% 28% 58% 42% / 40% 60% 45% 55%;
+        transform: translate(10px, -6px) scale(1.08);
+    }
 
-  40% {
-    border-radius: 48% 52% 32% 68% / 60% 72% 28% 40%;
-    transform: translate(-10px, 6px) scale(0.92);
-  }
+    40% {
+        border-radius: 48% 52% 32% 68% / 60% 72% 28% 40%;
+        transform: translate(-10px, 6px) scale(0.92);
+    }
 
-  50% {
-    border-radius: 68% 32% 30% 70% / 35% 75% 25% 65%;
-    transform: translate(12px, -10px) scale(1.05);
-  }
+    50% {
+        border-radius: 68% 32% 30% 70% / 35% 75% 25% 65%;
+        transform: translate(12px, -10px) scale(1.05);
+    }
 
-  60% {
-    border-radius: 75% 25% 40% 60% / 65% 45% 55% 35%;
-    transform: translate(-12px, 8px) scale(0.9);
-  }
+    60% {
+        border-radius: 75% 25% 40% 60% / 65% 45% 55% 35%;
+        transform: translate(-12px, 8px) scale(0.9);
+    }
 
-  70% {
-    border-radius: 60% 40% 25% 75% / 72% 30% 70% 28%;
-    transform: translate(8px, -12px) scale(1.06);
-  }
+    70% {
+        border-radius: 60% 40% 25% 75% / 72% 30% 70% 28%;
+        transform: translate(8px, -12px) scale(1.06);
+    }
 
-  80% {
-    border-radius: 55% 45% 65% 35% / 50% 60% 40% 50%;
-    transform: translate(-6px, 10px) scale(0.96);
-  }
+    80% {
+        border-radius: 55% 45% 65% 35% / 50% 60% 40% 50%;
+        transform: translate(-6px, 10px) scale(0.96);
+    }
 
-  90% {
-    border-radius: 40% 60% 72% 28% / 68% 32% 66% 34%;
-    transform: translate(10px, -6px) scale(1.03);
-  }
+    90% {
+        border-radius: 40% 60% 72% 28% / 68% 32% 66% 34%;
+        transform: translate(10px, -6px) scale(1.03);
+    }
 
-  100% {
-    border-radius: 42% 58% 51% 49% / 55% 38% 62% 45%;
-    transform: translate(0, 0) scale(1);
-  }
+    100% {
+        border-radius: 42% 58% 51% 49% / 55% 38% 62% 45%;
+        transform: translate(0, 0) scale(1);
+    }
 }
