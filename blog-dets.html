@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Blogs Details</title>
+    <meta name="description"
+        content="Ken Academy provides quality education, exam preparation, and skill development programs with expert faculty, structured courses, and proven learning methods.">
+    <meta name="keywords"
+        content="Ken Academy, education institute, coaching center, exam preparation, online classes, skill development, academic courses, learning academy">
+    <meta property="og:title" content="Ken Academy | Quality Education & Career-Oriented Learning">
+    <meta property="og:description"
+        content="Join Ken Academy for expert-led courses, exam preparation, and skill development programs designed for academic success and career growth.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 text-slate-200 text-xs md:text-sm hidden sm:block">
+        <div class="container">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between py-2 gap-2">
+
+                <!-- Left Info -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <span class="flex items-center gap-2">
+                        <i class="ri-phone-line text-emerald-400"></i>
+                        <a href="tel:+91 98741 95221" class="hover:text-white transition">
+                            Call: +91 98741 95221
+                        </a>
+                    </span>
+
+                    <span class="flex items-center gap-2">
+                        <i class="ri-mail-line text-emerald-400"></i>
+                        <a href="mailto:rashid.ejaz19@gmail.com" class="hover:text-white transition">
+                            rashid.ejaz19@gmail.com
+                        </a>
+                    </span>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center justify-between sm:justify-end gap-4">
+                    <span href="#" class="hover:text-white transition">Follow Us On</span>
+
+                    <span class="hidden sm:block text-slate-500 mx-1">|</span>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="hover:text-yellow-300 transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="hover:text-yellow-300 transition">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="hover:text-yellow-300 transition">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/85 backdrop-blur border-b border-gray-200">
+        <div class="container">
+            <div class="flex items-center justify-between py-2">
+
+                <!-- Logo -->
+                <img src="assets/images/logo/logo.png" class="lg:h-16 h-12" alt="">
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-900">
+                    <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-teal-600 transition">About Us</a>
+                    <a href="admission.html" class="hover:text-teal-600 transition">Admission</a>
+                    <a href="feature.html" class="hover:text-teal-600 transition">Our Features</a>
+                    <a href="faculty.html" class="hover:text-teal-600 transition">Our Faculty</a>
+                    <a href="education.html" class="hover:text-teal-600 transition">Education Programme</a>
+                    <a href="gallery.html" class="hover:text-teal-600 transition">Gallery</a>
+                    <a href="contact.html" class="hover:text-teal-600 transition">Contact Us</a>
+
+                    <!-- Apply Now -->
+                    <a href="javascript:void(0)" onclick="openApplyModal()"
+                        class="ml-4 rounded-lg bg-teal-600 px-5 py-2.5 text-white text-sm font-semibold hover:bg-teal-700 transition hidden xl:inline-block">
+                        Apply Now
+                    </a>
+
+                </nav>
+
+                <!-- Mobile Toggle -->
+                <button onclick="openMenu()"
+                    class="lg:hidden rounded-md p-2 bg-transparent hover:bg-gray-100 transition" aria-label="Open menu">
+                    <i class="ri-menu-3-line text-3xl"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div id="overlay" onclick="closeMenu()"
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+    </div>
+
+    <!-- OFFCANVAS -->
+    <aside id="offcanvas"
+        class="fixed top-0 left-0 h-full w-80 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 z-[100] flex flex-col">
+
+        <!-- Offcanvas Header -->
+        <div class="py-2 border-b border-slate-100 px-4 flex items-center justify-between">
+            <img src="assets/images/logo/logo.png" class="h-10" alt="">
+            <button onclick="closeMenu()" class="text-3xl text-red-500">×</button>
+        </div>
+
+        <!-- Menu -->
+        <!-- Navigation -->
+        <nav class="flex-1 pb-6 text-sm font-medium text-gray-800">
+
+            <a href="index.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Home
+            </a>
+
+            <a href="about.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                About Us
+            </a>
+
+            <a href="admission.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Admission
+            </a>
+
+            <a href="feature.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Our Features
+            </a>
+
+            <a href="faculty.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Our Faculty
+            </a>
+
+            <a href="education.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Education Programme
+            </a>
+
+            <a href="gallery.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Gallery
+            </a>
+
+            <a href="contact.html" class="block px-4 py-3 border-b border-gray-200
+           hover:bg-teal-50 hover:text-teal-700 transition">
+                Contact Us
+            </a>
+
+            <!-- CTA -->
+            <div class="pt-6 px-4">
+                <button onclick="openApplyModal()" class="block text-center rounded-lg bg-teal-600 px-4 py-3
+             text-white font-semibold hover:bg-teal-700 transition">
+                    Apply for Admission
+                </button>
+            </div>
+
+        </nav>
+
+
+        <!-- Footer -->
+        <div class="border-t px-6 py-4 text-xs border-slate-200 text-gray-500">
+            © 2026 The Ken Academy. All rights reserved.
+        </div>
+    </aside>
+
+
+
+    <main>
+
+        <!-- Breadcrumb -->
+        <section class="bg-teal-600">
+            <div class="container">
+                <div class="h-14 flex items-center justify-between">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="Breadcrumb">
+                        <ol class="flex items-center text-xs md:text-sm text-yellow-300 gap-2">
+
+                            <li>
+                                <a href="/" class="hover:text-white transition">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="text-yellow-300">›</li>
+
+                            <li class="font-medium text-white">
+                                Blogs
+                            </li>
+                            <li class="text-yellow-300">›</li>
+
+                            <li class="font-medium text-white">
+                                Blogs Details
+                            </li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class=" py-10 lg:py-16">
+            <div class="container">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+                    <!-- MAIN BLOG CONTENT -->
+                    <article class="lg:col-span-8">
+
+                        <!-- Category -->
+                        <span
+                            class="inline-block mb-3 rounded bg-teal-100 px-3 py-1 text-xs font-semibold text-teal-700">
+                            Education
+                        </span>
+
+                        <!-- Title -->
+                        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                            Importance of Holistic Education in Modern Schools
+                        </h1>
+
+                        <!-- Meta -->
+                        <div class="mt-3 flex flex-wrap items-center gap-4 text-sm text-gray-600">
+                            <span class="flex items-center gap-1">
+                                <i class="ri-user-line"></i> Admin
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="ri-calendar-line"></i> 12 Aug 2026
+                            </span>
+                        </div>
+
+                        <!-- Featured Image -->
+                        <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                            <img src="assets/images/blogs/blog-1.webp" alt="School Education"
+                                class="w-full h-64 md:h-96 object-cover">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="mt-10">
+
+                            <!-- Introduction -->
+                            <p id="introduction" class="text-gray-700 leading-relaxed mb-6">
+                                Holistic education focuses on nurturing the intellectual, emotional,
+                                physical, and moral development of students. It prepares learners
+                                not only for examinations but for life. In today’s rapidly changing
+                                world, education must equip students with knowledge, values, and
+                                practical skills that help them adapt and grow.
+                            </p>
+
+                            <!-- Academic Excellence -->
+                            <h2 id="academic-excellence"
+                                class="text-xl md:text-2xl font-semibold text-gray-900 mt-12 mb-4">
+                                Academic Excellence
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Strong academics remain the foundation of quality education.
+                                Structured curricula, qualified teachers, and continuous assessments
+                                help students achieve consistent academic growth. A focus on
+                                conceptual understanding rather than rote learning encourages
+                                curiosity, critical thinking, and lifelong learning.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Regular evaluations and feedback ensure that students understand
+                                their strengths and areas for improvement, enabling them to progress
+                                confidently in their academic journey.
+                            </p>
+
+                            <!-- Co-Curricular Activities -->
+                            <h2 id="co-curricular" class="text-xl md:text-2xl font-semibold text-gray-900 mt-12 mb-4">
+                                Co-Curricular Activities
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Activities such as sports, arts, music, debates, and cultural programs
+                                encourage creativity, teamwork, and leadership qualities among students.
+                                These activities help students discover their interests and talents
+                                beyond academics.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Participation in co-curricular programs also improves physical health,
+                                emotional well-being, and social skills, contributing to balanced
+                                personal development.
+                            </p>
+
+                            <!-- Blockquote -->
+                            <div class="my-10 pl-6 py-4 bg-slate-50 border-l-4 border-teal-600 rounded-r-lg">
+                                <p class="italic text-gray-700">
+                                    Education is not preparation for life; education is life itself.
+                                </p>
+                            </div>
+
+                            <!-- Values & Discipline -->
+                            <h2 id="values-discipline"
+                                class="text-xl md:text-2xl font-semibold text-gray-900 mt-12 mb-4">
+                                Values & Discipline
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Schools play a crucial role in shaping the moral and ethical values
+                                of students. Discipline, respect, empathy, and responsibility are
+                                essential qualities that prepare students to become responsible
+                                citizens.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                A positive and inclusive school environment helps students develop
+                                emotional intelligence, resilience, and confidence to face challenges
+                                in life.
+                            </p>
+
+                            <!-- Future Readiness -->
+                            <h2 id="future-readiness"
+                                class="text-xl md:text-2xl font-semibold text-gray-900 mt-12 mb-4">
+                                Preparing Students for the Future
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                In a fast-evolving global landscape, students must be adaptable,
+                                innovative, and ethically grounded. Holistic education equips them
+                                with problem-solving abilities, communication skills, and a growth
+                                mindset essential for future success.
+                            </p>
+
+                            <!-- Conclusion -->
+                            <h2 id="conclusion" class="text-xl md:text-2xl font-semibold text-gray-900 mt-12 mb-4">
+                                Conclusion
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed">
+                                A balanced educational approach ensures students are confident,
+                                disciplined, and prepared for future challenges. By integrating
+                                academics, co-curricular activities, values, and emotional development,
+                                holistic education truly fulfills the purpose of learning.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Tags + Share -->
+                        <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="text-xs font-semibold text-gray-600 uppercase">Tags:</span>
+                                <a href="#"
+                                    class="rounded bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 hover:text-teal-700">Education</a>
+                                <a href="#"
+                                    class="rounded bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 hover:text-teal-700">Schools</a>
+                                <a href="#"
+                                    class="rounded bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 hover:text-teal-700">Students</a>
+                            </div>
+
+                            <!-- Share -->
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-gray-500">Share:</span>
+                                <a
+                                    class="h-9 w-9 rounded-full border flex items-center justify-center hover:bg-teal-600 hover:text-white">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a
+                                    class="h-9 w-9 rounded-full border flex items-center justify-center hover:bg-teal-600 hover:text-white">
+                                    <i class="ri-twitter-x-line"></i>
+                                </a>
+                                <a
+                                    class="h-9 w-9 rounded-full border flex items-center justify-center hover:bg-teal-600 hover:text-white">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- SIDEBAR -->
+                    <aside class="w-full lg:col-span-4 space-y-6 lg:space-y-8">
+
+                        <!-- TOC -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6">
+                            <h3 class="text-xs font-semibold text-gray-900 mb-4 uppercase tracking-widest">
+                                Table of Contents
+                            </h3>
+
+                            <ul class="space-y-1 text-sm">
+                                <li>
+                                    <a href="#introduction"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Introduction
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#academic-excellence"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Academic Excellence
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#co-curricular"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Co-Curricular Activities
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#values-discipline"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Values & Discipline
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#future-readiness"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Preparing Students for the Future
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#conclusion"
+                                        class="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:bg-white hover:text-teal-600 transition">
+                                        Conclusion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- SOCIAL -->
+                        <div class="bg-slate-100 border border-slate-200 rounded-2xl p-5 sm:p-6">
+                            <h3 class="font-semibold text-gray-900 mb-4">Social Networks</h3>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 text-sm">
+                                <a href="#"
+                                    class="flex items-center gap-2 p-3 rounded-xl bg-white hover:bg-pink-50 transition">
+                                    <i class="ri-instagram-line text-pink-500 text-lg"></i>
+                                    <span class="">Instagram</span>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 p-3 rounded-xl bg-white hover:bg-sky-50 transition">
+                                    <i class="ri-twitter-x-line text-sky-500 text-lg"></i>
+                                    <span class="">Twitter</span>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 p-3 rounded-xl bg-white hover:bg-blue-50 transition">
+                                    <i class="ri-facebook-fill text-blue-600 text-lg"></i>
+                                    <span class="">Facebook</span>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 p-3 rounded-xl bg-white hover:bg-red-50 transition">
+                                    <i class="ri-youtube-line text-red-600 text-lg"></i>
+                                    <span class="">YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CATEGORIES -->
+                        <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6">
+                            <h3 class="font-semibold text-gray-900 mb-4">Category</h3>
+
+                            <div class="space-y-2 text-sm">
+                                <a
+                                    class="flex justify-between items-center rounded-xl px-4 py-3 bg-slate-50 hover:bg-teal-50 transition">
+                                    <span>Education</span>
+                                    <span class="text-xs bg-white px-2 py-0.5 rounded-full">12</span>
+                                </a>
+                                <a
+                                    class="flex justify-between items-center rounded-xl px-4 py-3 bg-slate-50 hover:bg-teal-50 transition">
+                                    <span>Admissions</span>
+                                    <span class="text-xs bg-white px-2 py-0.5 rounded-full">6</span>
+                                </a>
+                                <a
+                                    class="flex justify-between items-center rounded-xl px-4 py-3 bg-slate-50 hover:bg-teal-50 transition">
+                                    <span>School Life</span>
+                                    <span class="text-xs bg-white px-2 py-0.5 rounded-full">9</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- POPULAR POSTS -->
+                        <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6">
+                            <h3 class="font-semibold text-gray-900 mb-4">Popular Posts</h3>
+
+                            <div class="space-y-4">
+                                <a class="flex gap-3 items-start group">
+                                    <img src="assets/images/blogs/blog-2.webp"
+                                        class="h-14 w-14 rounded-xl object-cover shrink-0">
+                                    <div>
+                                        <p
+                                            class="text-sm font-medium text-gray-900 group-hover:text-teal-600 transition">
+                                            Why Discipline Matters
+                                        </p>
+                                        <span class="text-xs text-gray-500">10 Aug 2026</span>
+                                    </div>
+                                </a>
+
+                                <a class="flex gap-3 items-start group">
+                                    <img src="assets/images/blogs/blog-2.webp"
+                                        class="h-14 w-14 rounded-xl object-cover shrink-0">
+                                    <div>
+                                        <p
+                                            class="text-sm font-medium text-gray-900 group-hover:text-teal-600 transition">
+                                            Role of Teachers
+                                        </p>
+                                        <span class="text-xs text-gray-500">05 Aug 2026</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- TAGS -->
+                        <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6">
+                            <h3 class="font-semibold text-gray-900 mb-4">Tag Cloud</h3>
+
+                            <div class="flex flex-wrap gap-2">
+                                <a
+                                    class="rounded-full bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 transition">Education</a>
+                                <a
+                                    class="rounded-full bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 transition">Students</a>
+                                <a
+                                    class="rounded-full bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 transition">Teachers</a>
+                                <a
+                                    class="rounded-full bg-slate-100 px-3 py-1 text-xs hover:bg-teal-100 transition">Campus</a>
+                            </div>
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-slate-200 py-8">
+        <div class="container">
+
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- School Info -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">
+                        The Ken Academy
+                    </h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        The Ken Academy is committed to providing quality education
+                        that nurtures academic excellence, discipline, creativity,
+                        and values—supporting students from KG to Class 12.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-teal-400 transition">About Us</a></li>
+                        <li><a href="faculty.html" class="hover:text-teal-400 transition">Faculty</a></li>
+                        <li><a href="admission.html" class="hover:text-teal-400 transition">Admissions</a></li>
+                        <li><a href="blog.html" class="hover:text-teal-400 transition">Blogs</a></li>
+                        <li><a href="contact.html" class="hover:text-teal-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+                        Our Programs
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="hover:text-teal-400 transition">KG to Class 10</span></li>
+                        <li><span class="hover:text-teal-400 transition">Senior Secondary</span></li>
+                        <li><span class="hover:text-teal-400 transition">Computer Education</span></li>
+                        <li><span class="hover:text-teal-400 transition">Co-Curricular Activities</span></li>
+                        <li><span class="hover:text-teal-400 transition">Value Education</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+                        Contact Us
+                    </h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>The Ken Academy</li>
+                        <li>City, State, India</li>
+                        <li>Phone: <a href="tel:+91 98741 95221" class="hover:text-teal-400">+91 98741 95221</a></li>
+                        <li>Email: <a href="mailto:rashid.ejaz19@gmail.com"
+                                class="hover:text-teal-400">rashid.ejaz19@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div
+                class="mt-12 border-t border-slate-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+                <p class="text-xs text-slate-500">
+                    © 2026 The Ken Academy. All rights reserved.
+                </p>
+
+                <div class="flex gap-4 text-xs">
+                    <a href="#" class="hover:text-teal-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-teal-400 transition">Terms & Conditions</a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Backdrop -->
+    <div id="applyBackdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity"
+        onclick="closeApplyModal()"></div>
+
+    <!-- Modal -->
+    <div id="applyModal" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+
+        <div class="relative sm:w-[75%] w-[95%]  md:max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden
+              transform scale-95 opacity-0 transition-all duration-300
+              grid grid-cols-1 md:grid-cols-2">
+
+            <!-- Left Image -->
+            <div class="hidden md:block bg-teal-600">
+                <img src="assets/images/blogs/blog-2.webp" alt="Admissions"
+                    class="h-full w-full object-cover aspect-square">
+            </div>
+
+            <!-- Right Form -->
+            <div class="p-6 sm:p-8">
+                <button onclick="closeApplyModal()"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl cursor-pointer">
+                    <i class="ri-close-line text-red-500 text-2xl"></i>
+                </button>
+
+                <h3 class="text-lg font-semibold text-gray-900">
+                    Admission Enquiry
+                </h3>
+                <p class="mt-0.5 text-xs sm:text-sm text-gray-600">
+                    Apply for admission at <strong class="text-teal-500">The Ken Academy</strong>
+                </p>
+
+                <form class="mt-6 space-y-6">
+
+                    <!-- Full Name -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">
+                            Full Name
+                        </label>
+                        <input type="text" required class="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">
+                            Phone Number
+                        </label>
+                        <input type="tel" required class="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+
+                    <!-- Course -->
+                    <div class="flex flex-col">
+                        <label for="course" class="text-sm font-medium mb-2">
+                            Choose Class
+                        </label>
+
+                        <div class="relative">
+                            <select id="course" name="course" required class="w-full appearance-none rounded-lg border border-gray-300
+                   px-4 py-3 pr-10 text-sm bg-white
+                   focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                <option value="">Select Class</option>
+                                <option>KG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                                <option>Class 11</option>
+                                <option>Class 12</option>
+                            </select>
+
+                            <!-- Remix Icon Arrow -->
+                            <i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2
+                   text-gray-500 pointer-events-none text-lg">
+                            </i>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="w-full rounded-lg bg-teal-600 px-5 py-3 text-white text-sm font-semibold
+                       hover:bg-teal-700 transition">
+                        Submit Application
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true,
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            infinite: false
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+
+</html>
